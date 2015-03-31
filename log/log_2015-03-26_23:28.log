@@ -1,0 +1,23 @@
+2015-03-26 23:28:31,780:INFO:root:Initializing Firefox
+2015-03-26 23:28:34,471:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-26 23:28:34,519:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:28:34,520:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/timeouts/implicit_wait {"sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "ms": 10000.0}
+2015-03-26 23:28:34,524:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:28:34,541:INFO:root:Getting SET100 Stock name and id list
+2015-03-26 23:28:34,542:DEBUG:root:RUN SQL:SELECT `Stock_Name`,`Stock_ID` FROM `stock` WHERE Is_Index=0
+2015-03-26 23:28:34,542:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/url {"url": "http://www.settrade.com/C13_FiveDays.jsp", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26"}
+2015-03-26 23:28:45,483:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:28:45,483:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/timeouts/implicit_wait {"sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "ms": 20000.0}
+2015-03-26 23:28:45,505:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:28:45,506:INFO:root:Finding set index price
+2015-03-26 23:28:45,507:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/elements {"using": "xpath", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "value": "//td[@class='tablecolor2']"}
+2015-03-26 23:28:45,557:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:28:45,557:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/element/{3ef9bab3-bcff-7840-aa1f-3cf562eebc36}/elements {"using": "tag name", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "id": "{3ef9bab3-bcff-7840-aa1f-3cf562eebc36}", "value": "td"}
+2015-03-26 23:29:05,570:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:29:05,571:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/element/{ba46d34a-a352-f04e-89ec-572ceff3cca0}/elements {"using": "tag name", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "id": "{ba46d34a-a352-f04e-89ec-572ceff3cca0}", "value": "td"}
+2015-03-26 23:29:25,582:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:29:25,582:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/element/{3b952465-7c96-854f-8c00-b17e0068da8b}/elements {"using": "tag name", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "id": "{3b952465-7c96-854f-8c00-b17e0068da8b}", "value": "td"}
+2015-03-26 23:29:45,597:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:29:45,597:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/element/{578fc983-e790-694c-97cd-0ba67d426d0f}/elements {"using": "tag name", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "id": "{578fc983-e790-694c-97cd-0ba67d426d0f}", "value": "td"}
+2015-03-26 23:30:05,612:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:05,613:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57778/hub/session/45152618-0556-1c4a-925c-6cfaec7bca26/element/{a8d0779f-f078-f642-934f-47ffec33b543}/elements {"using": "tag name", "sessionId": "45152618-0556-1c4a-925c-6cfaec7bca26", "id": "{a8d0779f-f078-f642-934f-47ffec33b543}", "value": "td"}

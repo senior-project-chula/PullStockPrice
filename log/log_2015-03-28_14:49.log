@@ -1,0 +1,28 @@
+2015-03-28 14:49:11,923:INFO:root:Initializing Firefox
+2015-03-28 14:49:14,613:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64356/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-28 14:49:14,657:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:14,657:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/timeouts/implicit_wait {"sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b", "ms": 10000.0}
+2015-03-28 14:49:14,662:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:14,677:INFO:root:Getting SET100 Stock name and id list
+2015-03-28 14:49:14,678:DEBUG:root:RUN SQL:SELECT `Stock_Name`,`Stock_ID` FROM `stock` WHERE Is_Index=0
+2015-03-28 14:49:14,679:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/url {"url": "http://www.settrade.com/C13_FiveDays.jsp", "sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b"}
+2015-03-28 14:49:32,354:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,354:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/timeouts/implicit_wait {"sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b", "ms": 20000.0}
+2015-03-28 14:49:32,361:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,361:INFO:root:Finding set index price
+2015-03-28 14:49:32,362:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/elements {"using": "xpath", "sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b", "value": "//td[@class='tablecolor2']"}
+2015-03-28 14:49:32,409:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,409:DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/element/{d4fd6dd0-0646-1c45-9235-2058ffdfeda0}/attribute/innerHTML {"sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b", "name": "innerHTML", "id": "{d4fd6dd0-0646-1c45-9235-2058ffdfeda0}"}
+2015-03-28 14:49:32,414:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,415:DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/element/{215032f5-ed02-cb4c-bdd7-8cd572472434}/attribute/innerHTML {"sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b", "name": "innerHTML", "id": "{215032f5-ed02-cb4c-bdd7-8cd572472434}"}
+2015-03-28 14:49:32,420:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,420:DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b/element/{f1eafad4-12fd-a146-896d-4eb5e775b6af}/attribute/innerHTML {"sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b", "name": "innerHTML", "id": "{f1eafad4-12fd-a146-896d-4eb5e775b6af}"}
+2015-03-28 14:49:32,425:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,429:INFO:root:Today SET index = 1495.22
+2015-03-28 14:49:32,429:INFO:root:Today SET 100 index = 993.33
+2015-03-28 14:49:32,429:INFO:root:Saving set index to database
+2015-03-28 14:49:32,431:DEBUG:root:RUN SQL:insert into `SENIOR1`.`price` ( `Stock_ID`, `Opening_Price`, `Closing_Price`, `Date`) values ( '101', '0', '993.33', '2015-03-27')
+2015-03-28 14:49:32,431:DEBUG:root:RUN SQL:insert into `SENIOR1`.`price` ( `Stock_ID`, `Opening_Price`, `Closing_Price`, `Date`) values ( '102', '0', '1495.22', '2015-03-27')
+2015-03-28 14:49:32,432:DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64356/hub/session/6b07a8e8-537e-8f43-82a5-624dea0d7b7b {"sessionId": "6b07a8e8-537e-8f43-82a5-624dea0d7b7b"}
+2015-03-28 14:49:32,435:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 14:49:32,508:INFO:root:DONE updating stock price for today

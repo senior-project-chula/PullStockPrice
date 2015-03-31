@@ -1,0 +1,17 @@
+2015-03-24 02:28:15,665:INFO:root:Initializing Firefox
+2015-03-24 02:28:18,299:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61357/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-24 02:28:18,346:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:28:18,347:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61357/hub/session/73d55be4-cd70-bb4e-80ff-6ebd7d738d28/timeouts/implicit_wait {"sessionId": "73d55be4-cd70-bb4e-80ff-6ebd7d738d28", "ms": 10000.0}
+2015-03-24 02:28:18,351:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:28:18,366:INFO:root:Getting SET100 Stock name and id list
+2015-03-24 02:28:18,367:DEBUG:root:RUN SQL:SELECT `Stock_Name`,`Stock_ID` FROM `stock`
+2015-03-24 02:28:18,368:INFO:root:==============================
+2015-03-24 02:28:18,368:INFO:root:Extracting stock name AAV with ID=1
+2015-03-24 02:28:18,368:INFO:root:Opening the link http://www.settrade.com/C04_02_stock_historical_p1.jsp?txtSymbol=AAV&selectPage=2&max=10&offset=0
+2015-03-24 02:28:18,368:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61357/hub/session/73d55be4-cd70-bb4e-80ff-6ebd7d738d28/url {"url": "http://www.settrade.com/C04_02_stock_historical_p1.jsp?txtSymbol=AAV&selectPage=2&max=10&offset=0", "sessionId": "73d55be4-cd70-bb4e-80ff-6ebd7d738d28"}
+2015-03-24 02:28:21,039:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:28:21,040:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61357/hub/session/73d55be4-cd70-bb4e-80ff-6ebd7d738d28/timeouts/implicit_wait {"sessionId": "73d55be4-cd70-bb4e-80ff-6ebd7d738d28", "ms": 20000.0}
+2015-03-24 02:28:21,048:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:28:21,049:INFO:root:getting the latest date of this stock
+2015-03-24 02:28:21,049:DEBUG:root:RUN SQL:SELECT MAX(`price`.`Date`) FROM `price` WHERE `price`.`Stock_ID`='1'
+2015-03-24 02:28:21,049:INFO:root:using latest date = ((datetime.datetime(2015, 3, 20, 0, 0),),)

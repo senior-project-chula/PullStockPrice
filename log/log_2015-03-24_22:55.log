@@ -1,0 +1,4 @@
+2015-03-24 22:55:29,759:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51687/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-24 22:55:29,811:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 22:55:29,811:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:51687/hub/session/ed37b8d3-5d94-9f4f-839c-2e8f55c6b593/timeouts/implicit_wait {"sessionId": "ed37b8d3-5d94-9f4f-839c-2e8f55c6b593", "ms": 10000.0}
+2015-03-24 22:55:29,816:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

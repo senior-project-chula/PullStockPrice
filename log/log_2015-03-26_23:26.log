@@ -1,0 +1,5 @@
+2015-03-26 23:26:42,751:INFO:root:Initializing Firefox
+2015-03-26 23:26:45,812:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57697/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-26 23:26:45,865:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:26:45,865:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57697/hub/session/344fddd3-817f-ac4b-926b-de1f82f6f30c/timeouts/implicit_wait {"sessionId": "344fddd3-817f-ac4b-926b-de1f82f6f30c", "ms": 10000.0}
+2015-03-26 23:26:45,870:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request

@@ -1,0 +1,28 @@
+2015-03-28 15:04:47,996:INFO:root:Initializing Firefox
+2015-03-28 15:04:50,642:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-28 15:04:50,689:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:04:50,689:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/timeouts/implicit_wait {"sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28", "ms": 10000.0}
+2015-03-28 15:04:50,694:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:04:50,709:INFO:root:Getting SET100 Stock name and id list
+2015-03-28 15:04:50,710:DEBUG:root:RUN SQL:SELECT `Stock_Name`,`Stock_ID` FROM `stock` WHERE Is_Index=0
+2015-03-28 15:04:50,711:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/url {"url": "http://www.settrade.com/C13_FiveDays.jsp", "sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28"}
+2015-03-28 15:05:02,932:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:02,932:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/timeouts/implicit_wait {"sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28", "ms": 20000.0}
+2015-03-28 15:05:02,945:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:02,946:INFO:root:Finding set index
+2015-03-28 15:05:02,946:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/elements {"using": "xpath", "sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28", "value": "//td[@class='tablecolor2']"}
+2015-03-28 15:05:02,998:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:02,999:DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/element/{18d298bd-be13-b34d-90f9-20b7544d3a7f}/attribute/innerHTML {"sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28", "name": "innerHTML", "id": "{18d298bd-be13-b34d-90f9-20b7544d3a7f}"}
+2015-03-28 15:05:03,006:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:03,006:DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/element/{ec9b9dfe-f4ab-1c45-84b2-9b7fe79af869}/attribute/innerHTML {"sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28", "name": "innerHTML", "id": "{ec9b9dfe-f4ab-1c45-84b2-9b7fe79af869}"}
+2015-03-28 15:05:03,012:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:03,012:DEBUG:selenium.webdriver.remote.remote_connection:GET http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28/element/{c7f6a721-7731-374b-9902-4f1d1451bc28}/attribute/innerHTML {"sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28", "name": "innerHTML", "id": "{c7f6a721-7731-374b-9902-4f1d1451bc28}"}
+2015-03-28 15:05:03,023:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:03,025:INFO:root:last date appear on setTrade is 27/03/15 17:07:00
+2015-03-28 15:05:03,026:INFO:root:getting the latest date of this stock id = 101
+2015-03-28 15:05:03,027:DEBUG:root:RUN SQL:SELECT MAX(`price`.`Date`) FROM `price` WHERE `price`.`Stock_ID`=101
+2015-03-28 15:05:03,027:INFO:root:get latest date = 2015-03-27 17:07:00
+2015-03-28 15:05:03,028:INFO:root:SET and SET100 index in the database is already up-to-date
+2015-03-28 15:05:03,028:DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:64643/hub/session/0713246b-7c1f-b842-ba5a-34bcdfb94d28 {"sessionId": "0713246b-7c1f-b842-ba5a-34bcdfb94d28"}
+2015-03-28 15:05:03,054:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-28 15:05:03,134:INFO:root:DONE updating stock price for today

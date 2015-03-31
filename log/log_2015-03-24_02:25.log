@@ -1,0 +1,15 @@
+2015-03-24 02:25:51,715:INFO:root:Initializing Firefox
+2015-03-24 02:25:54,366:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61166/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-24 02:25:54,411:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:25:54,411:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61166/hub/session/01a8d0ad-9a10-2745-a5c6-28fa6c99dd4e/timeouts/implicit_wait {"sessionId": "01a8d0ad-9a10-2745-a5c6-28fa6c99dd4e", "ms": 10000.0}
+2015-03-24 02:25:54,416:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:25:54,431:INFO:root:Getting SET100 Stock name and id list
+2015-03-24 02:25:54,432:DEBUG:root:RUN SQL:SELECT `Stock_Name`,`Stock_ID` FROM `stock`
+2015-03-24 02:25:54,432:INFO:root:==============================
+2015-03-24 02:25:54,433:INFO:root:Extracting stock name AAV with ID=1
+2015-03-24 02:25:54,433:INFO:root:Opening the link http://www.settrade.com/C04_02_stock_historical_p1.jsp?txtSymbol=AAV&selectPage=2&max=10&offset=0
+2015-03-24 02:25:54,433:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61166/hub/session/01a8d0ad-9a10-2745-a5c6-28fa6c99dd4e/url {"url": "http://www.settrade.com/C04_02_stock_historical_p1.jsp?txtSymbol=AAV&selectPage=2&max=10&offset=0", "sessionId": "01a8d0ad-9a10-2745-a5c6-28fa6c99dd4e"}
+2015-03-24 02:25:57,493:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:25:57,493:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:61166/hub/session/01a8d0ad-9a10-2745-a5c6-28fa6c99dd4e/timeouts/implicit_wait {"sessionId": "01a8d0ad-9a10-2745-a5c6-28fa6c99dd4e", "ms": 20000.0}
+2015-03-24 02:25:57,505:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-24 02:25:57,506:INFO:root:getting the latest date of this stock

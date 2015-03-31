@@ -1,0 +1,21 @@
+2015-03-26 23:30:17,569:INFO:root:Initializing Firefox
+2015-03-26 23:30:20,246:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "javascriptEnabled": true}}
+2015-03-26 23:30:20,292:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:20,292:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/timeouts/implicit_wait {"sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "ms": 10000.0}
+2015-03-26 23:30:20,297:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:20,312:INFO:root:Getting SET100 Stock name and id list
+2015-03-26 23:30:20,312:DEBUG:root:RUN SQL:SELECT `Stock_Name`,`Stock_ID` FROM `stock` WHERE Is_Index=0
+2015-03-26 23:30:20,313:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/url {"url": "http://www.settrade.com/C13_FiveDays.jsp", "sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45"}
+2015-03-26 23:30:27,535:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:27,535:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/timeouts/implicit_wait {"sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "ms": 20000.0}
+2015-03-26 23:30:27,546:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:27,546:INFO:root:Finding set index price
+2015-03-26 23:30:27,547:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/elements {"using": "xpath", "sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "value": "//td[@class='tablecolor2']"}
+2015-03-26 23:30:27,600:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:27,600:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/element/{14a5926a-a9e7-7442-8dca-fe3f70f66bd8}/elements {"using": "tag name", "sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "id": "{14a5926a-a9e7-7442-8dca-fe3f70f66bd8}", "value": "td"}
+2015-03-26 23:30:47,608:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:30:47,608:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/element/{e9ae5b8b-23b4-d640-9bad-463ac90de263}/elements {"using": "tag name", "sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "id": "{e9ae5b8b-23b4-d640-9bad-463ac90de263}", "value": "td"}
+2015-03-26 23:31:07,625:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:31:07,625:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/element/{81cd56f8-d0db-b545-afbc-4ab334c5ce15}/elements {"using": "tag name", "sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "id": "{81cd56f8-d0db-b545-afbc-4ab334c5ce15}", "value": "td"}
+2015-03-26 23:31:27,633:DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+2015-03-26 23:31:27,634:DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:57851/hub/session/afd78f26-999a-9a44-b209-e4ffab56ba45/element/{c073a37c-9b0a-0e41-a8fc-5abbc8adb6c4}/elements {"using": "tag name", "sessionId": "afd78f26-999a-9a44-b209-e4ffab56ba45", "id": "{c073a37c-9b0a-0e41-a8fc-5abbc8adb6c4}", "value": "td"}
