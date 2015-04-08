@@ -93,7 +93,7 @@ db.close()
 for stockName in stockNames:
     logging.info("==============================")
     logging.info("Extracting stock name %s with ID=%s",stockName[0],stockName[1])
-    link="http://www.settrade.com/C04_02_stock_historical_p1.jsp?txtSymbol="+stockName[0]+"&selectPage=2&max=10&offset=0"
+    link="http://www.settrade.com/C04_02_stock_historical_p1.jsp?txtSymbol="+stockName[0]+"&selectPage=2&max=50&offset=0"
     logging.info("Opening the link %s",link)
     driver.get(link)
     driver.implicitly_wait(20)
